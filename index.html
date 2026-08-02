@@ -10,11 +10,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .share-trigger{margin-left:auto;margin-right:1.4rem;border:1px solid rgba(255,255,255,.55);border-radius:999px;background:rgba(255,255,255,.12);color:#fff;padding:.65rem 1rem;font:600 .85rem "DM Sans",sans-serif;cursor:pointer;white-space:nowrap}.share-trigger:hover{background:#fff;color:#151915}.share-trigger span{font-size:1.05rem;margin-right:.35rem}.share-dialog{width:min(720px,calc(100% - 2rem));border:0;border-radius:28px;padding:clamp(1.5rem,4vw,2.5rem);color:#171917;background:#f9f8f4;box-shadow:0 28px 90px rgba(0,0,0,.35)}.share-dialog::backdrop{background:rgba(6,10,8,.72);backdrop-filter:blur(7px)}.share-dialog h2{margin:0 3rem .35rem 0;font:500 clamp(2rem,5vw,3.2rem) "Playfair Display",serif}.share-dialog>p{margin:0 0 1.6rem;color:#687068}.share-close{position:absolute;right:1.25rem;top:1.25rem;width:44px;height:44px;border:0;border-radius:50%;font-size:1.7rem;background:#e9e9e5;cursor:pointer}.share-options{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}.share-option{display:flex;align-items:center;gap:.85rem;width:100%;padding:.9rem;border:1px solid #d8d9d4;border-radius:15px;background:#fff;color:#181a18;font:600 1rem "DM Sans",sans-serif;text-align:left;cursor:pointer}.share-option:hover{border-color:#748476;background:#f2f4f0}.share-icon{display:grid;place-items:center;flex:0 0 42px;height:42px;border-radius:11px;background:#647667;color:#fff;font-size:1.05rem}.share-copy-status{min-height:1.5rem;margin:.9rem 0 0!important;color:#3f6548!important;font-weight:600}@media(max-width:760px){.share-trigger{margin-right:.65rem;padding:.58rem .75rem}.share-trigger span{margin-right:.15rem}.share-options{grid-template-columns:1fr}.share-dialog{border-radius:20px}.share-dialog h2{font-size:2rem}}
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#innhold">Gå til innhold</a>
   <header class="site-header" id="toppen">
     <a class="brand" href="#toppen" aria-label="Røyvegen 136 – toppen"><span class="brand-mark">R136</span><span>Røyvegen 136</span></a>
+    <button class="share-trigger" type="button" aria-haspopup="dialog" aria-controls="share-dialog"><span aria-hidden="true">↗</span>Del</button>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><b class="sr-only">Åpne meny</b></button>
     <nav id="main-nav" aria-label="Hovedmeny">
       <a href="#boligen">Boligen</a><a href="#uteomrader">Uteområder</a><a href="#stue">Stue</a><a href="#kjokken">Kjøkken</a><a href="#bad">Bad</a><a href="#rom">Alle rom</a>
@@ -101,7 +105,21 @@
   </main>
 
   <footer><p>Røyvegen 136 · Skien</p><p>Bygget av <a href="https://hansenitsupport.no" target="_blank" rel="noopener noreferrer">Hansen IT Support</a></p></footer>
+  <dialog class="share-dialog" id="share-dialog" aria-labelledby="share-title">
+    <button class="share-close" type="button" aria-label="Lukk delingsvindu">×</button>
+    <h2 id="share-title">Del hjemmesiden</h2><p>Velg hvordan du vil dele Røyvegen 136</p>
+    <div class="share-options">
+      <button class="share-option" type="button" data-share="facebook"><span class="share-icon">f</span>Facebook</button>
+      <button class="share-option" type="button" data-share="whatsapp"><span class="share-icon">W</span>WhatsApp</button>
+      <button class="share-option" type="button" data-share="email"><span class="share-icon">@</span>E-post</button>
+      <button class="share-option" type="button" data-share="copy"><span class="share-icon">⧉</span>Kopier lenke</button>
+      <button class="share-option" type="button" data-share="more"><span class="share-icon">•••</span>Flere valg</button>
+    </div><p class="share-copy-status" role="status" aria-live="polite"></p>
+  </dialog>
   <dialog class="lightbox" aria-label="Bildevisning"><button class="lightbox-close" aria-label="Lukk bildevisning">×</button><button class="lightbox-arrow prev" aria-label="Forrige bilde">←</button><figure><img src="" alt=""><figcaption><span class="lightbox-title"></span><span class="lightbox-count"></span></figcaption></figure><button class="lightbox-arrow next" aria-label="Neste bilde">→</button></dialog>
   <script src="js/script.js?v=20260802-2"></script>
+  <script>
+    (()=>{const dialog=document.querySelector('#share-dialog'),open=document.querySelector('.share-trigger'),close=document.querySelector('.share-close'),status=document.querySelector('.share-copy-status');const url=location.href.split('#')[0],title='Røyvegen 136 · Skien',message='Se boligpresentasjonen for Røyvegen 136';const copy=async()=>{try{await navigator.clipboard.writeText(url);status.textContent='Lenken er kopiert.'}catch{prompt('Kopier denne lenken:',url)}};open.addEventListener('click',()=>dialog.showModal());close.addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});dialog.querySelectorAll('[data-share]').forEach(button=>button.addEventListener('click',async()=>{const action=button.dataset.share;if(action==='facebook')openShare('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(url));if(action==='whatsapp')openShare('https://wa.me/?text='+encodeURIComponent(message+' '+url));if(action==='email')location.href='mailto:?subject='+encodeURIComponent(title)+'&body='+encodeURIComponent(message+'\n\n'+url);if(action==='copy')await copy();if(action==='more'){if(navigator.share){try{await navigator.share({title,text:message,url})}catch{}}else await copy()}}));function openShare(address){window.open(address,'del','width=720,height=650,noopener,noreferrer')}})();
+  </script>
 </body>
 </html>
