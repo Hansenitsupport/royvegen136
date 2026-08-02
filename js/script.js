@@ -28,6 +28,13 @@ const groups = {
       ['uteomraade-10.jpg', 'Utvendig trapp mellom etasjene'],
       ['uteomraade-11.jpg', 'Overbygd inngangsparti'],
       ['uteomraade-12.jpg', 'Stor platting ved inngangspartiet'],
+      ['ute-kveld-01.jpg', 'Terrassen med stemningsbelysning på kveldstid'],
+      ['ute-kveld-02.jpg', 'Den frittstående boden med utvendig belysning'],
+      ['ute-kveld-03.jpg', 'Helårspaviljongen og terrassen på kveldstid'],
+      ['ute-kveld-04.jpg', 'Opplyst utvendig trapp mellom etasjene'],
+      ['ute-kveld-05.jpg', 'Sittegruppen med integrert terrassebelysning'],
+      ['ute-kveld-06.jpg', 'Inngangspartiet og uteplassen på kveldstid'],
+      ['ute-kveld-07.jpg', 'Trapp og gangareal med stemningsbelysning'],
     ],
   },
 
