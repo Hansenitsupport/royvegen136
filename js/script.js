@@ -50,7 +50,7 @@ const groups = {
       ['kjokken-02.jpg', 'Underlimt komposittvask ved vinduet'],
       ['kjokken-03.jpg', 'Elica platetopp med integrert ventilator'],
       ['kjokken-04.jpg', 'Spilevegg med Philips Hue-belysning'],
-      ['kjokken-05.jpg', 'Kjøkkenet sett fra spisestuen'],
+      ['kjokken-05.jpg', 'Kjøkkenet mot spisestuen'],
       ['kjokken-06.jpg', 'Komplett kjøkken med integrerte hvitevarer'],
     ],
   },
