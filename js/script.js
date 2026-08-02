@@ -9,6 +9,7 @@ const groups = {
     images: [
       ['drone-04.jpg', 'Inngangsparti, inngjerdet hage og frittstående bod'],
       ['drone-02.jpg', 'Droneoversikt over boligen, uteplassene og hagen'],
+      ['ute-kveld-05.jpg', 'Sittegruppen med integrert terrassebelysning'],
       ['drone-09.jpg', 'Dronebilde av bod, platting og inngjerdet plen'],
       ['drone-03.jpg', 'Overbygd sittegruppe ved inngangspartiet'],
       ['drone-05.jpg', 'Stor sittegruppe på terrassen bak'],
@@ -32,7 +33,6 @@ const groups = {
       ['ute-kveld-02.jpg', 'Den frittstående boden med utvendig belysning'],
       ['ute-kveld-03.jpg', 'Helårspaviljongen og terrassen på kveldstid'],
       ['ute-kveld-04.jpg', 'Opplyst utvendig trapp mellom etasjene'],
-      ['ute-kveld-05.jpg', 'Sittegruppen med integrert terrassebelysning'],
       ['ute-kveld-06.jpg', 'Inngangspartiet og uteplassen på kveldstid'],
       ['ute-kveld-07.jpg', 'Trapp og gangareal med stemningsbelysning'],
     ],
