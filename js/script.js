@@ -19,7 +19,7 @@ const groups = {
       ['drone-06.jpg', 'Utvendig trapp som forbinder etasjene'],
       ['uteomraade-01.jpg', 'Boligen med inngjerdet uteområde'],
       ['uteomraade-02.jpg', 'Stor platting ved inngangspartiet'],
-      ['uteomraade-03.jpg', 'Praktisk oppbevaring ved utetrappen'],
+      ['uteomraade-03.jpg', 'Stor sittegruppe ut på terrassen i 2 etg'],
       ['uteomraade-04.jpg', 'Helårspaviljong'],
       ['uteomraade-05.jpg', 'Veranda i 2 etg'],
       ['uteomraade-06.jpg', 'Lun balkong med sitteplass'],
