@@ -27,7 +27,7 @@ const groups = {
       ['uteomraade-08.jpg', 'Inngangsparti'],
       ['uteomraade-09.jpg', 'Utvendig trapp mellom etasjene'],
       ['uteomraade-10.jpg', 'Praktisk oppbevaring ved utetrappen'],
-      ['uteomraade-11.jpg', 'Overbygd inngangsparti'],
+      ['uteomraade-11.jpg', 'Nyplantet tre i hagen'],
       ['uteomraade-12.jpg', 'Naturtomt med fjell og vegetasjon'],
       ['ute-kveld-01.jpg', 'Terrassen med stemningsbelysning på kveldstid'],
       ['ute-kveld-02.jpg', 'Den frittstående boden med utvendig belysning'],
