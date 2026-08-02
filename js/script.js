@@ -34,11 +34,11 @@ const groups = {
   stue: {
     title: 'Stue og spisestue',
     images: [
-      ['stue-01.jpg', 'Stue og trappeløp i åpen løsning'],
-      ['stue-02.jpg', 'Stuen og trappeløp'],
+      ['stue-01.jpg', 'Spisestue og trappeløp i åpen løsning'],
+      ['stue-02.jpg', 'Romslig spiseplass med utgang til uteområdet'],
       ['stue-03.jpg', 'Stue med stor sofagruppe og utgang til balkong'],
       ['stue-04.jpg', 'Spisestue med god plass til mange'],
-      ['stue-05.jpg', 'Spisstuen og trappen ned'],
+      ['stue-05.jpg', 'Stuen og trappen sett fra spiseplassen'],
       ['stue-06.jpg', 'Lun stue med store vindusflater'],
     ],
   },
@@ -50,7 +50,7 @@ const groups = {
       ['kjokken-02.jpg', 'Underlimt komposittvask ved vinduet'],
       ['kjokken-03.jpg', 'Elica platetopp med integrert ventilator'],
       ['kjokken-04.jpg', 'Spilevegg med Philips Hue-belysning'],
-      ['kjokken-05.jpg', 'Kjøkkenet mot spisestuen'],
+      ['kjokken-05.jpg', 'Elica platetopp med integrert ventilator'],
       ['kjokken-06.jpg', 'Komplett kjøkken med integrerte hvitevarer'],
     ],
   },
